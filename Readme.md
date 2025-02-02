@@ -39,3 +39,13 @@ This allows for conditional execution of code, such as running tests or executin
 if __name__ == "__main__":
     # Code to execute when the script is run directly
     main()
+
+## Access Level Control in Python
+
+In Python, access level control for methods and variables is managed through naming conventions rather than explicit keywords like in Java. Here are the conventions:
+
+
+**Public**: Methods and variables are public by default. They can be accessed from anywhere.
+**Protected**: A single leading underscore (`_`) indicates that a method or variable is intended for internal use. It is a convention and does not prevent access from outside the class.
+**Private**: A double leading underscore (`__`) triggers name mangling, making it harder to access the method or variable from outside the class. This is used to avoid accidental access and name conflicts in subclasses.
+
