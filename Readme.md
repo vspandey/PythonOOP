@@ -7,6 +7,8 @@
 
 ## OOP Principles
 
+# In python, the object holds all the values even the data type. 
+
 1. **Encapsulation**: Encapsulation is the concept of wrapping data and methods that operate on the data within a single unit, typically a class. This helps in protecting the data from outside interference and misuse.
 
 2. **Inheritance**: Inheritance allows a class to inherit properties and behavior from another class. This promotes code reusability and establishes a natural hierarchy between classes.
