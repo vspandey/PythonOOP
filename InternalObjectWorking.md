@@ -11,3 +11,4 @@ then it calls 2 built in functions - \_\_new_\_ [ it creates object in memory an
 
 6. Special attributes variable names are surrounded by double underscores, hence do not create your own to avoid conflicts (same for methods) **Dunder**
 
+7. Use a @property decorator on a method, to make it an attribute and its a way to get a non-pubic thing. And you dont need a GETTER function
