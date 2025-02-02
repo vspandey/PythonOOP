@@ -3,7 +3,7 @@ then it calls 2 built in functions - \_\_new_\_ [ it creates object in memory an
 
 2. All the attributes are stored in the object's internal dictionary. Call objectName.\_\_dict\_\_ to see them
 
-3. Objects ARE NOT dictionaries, but python use internal dictionaries to manage the objects.
+3. Objects __ARE NOT__ dictionaries, but python use internal dictionaries to manage the objects.
 
 4. use \_\_str\_\_(self) method, to return the details about the object. For end users
 
