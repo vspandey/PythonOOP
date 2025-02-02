@@ -22,3 +22,12 @@
 In Python, a class is a blueprint for creating objects. When an object is created, Python allocates memory for the object and its attributes. Each object has a unique memory address. Python uses a dynamic memory allocation system and garbage collection to manage memory efficiently.
 
 When you pass an object to a function, it is passed by reference, meaning the function receives a reference to the original object, not a copy. This allows the function to modify the object's attributes directly, reflecting changes outside the function scope.
+
+
+## Access Modifiers
+
+Python do not provide access modifier as it trusts on "enablement" not "restrictions".
+Any varibale is **public**
+if you add one underscore in a variable name, the you make it **non-public**
+
+**name mangline** when you add 2 underscore in front ONLY, then no one can access using the variable name outside of the class. But can access using \_CLASSNAME\_\_variableName from any where.

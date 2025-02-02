@@ -8,3 +8,6 @@ then it calls 2 built in functions - \_\_new_\_ [ it creates object in memory an
 4. use \_\_str\_\_(self) method, to return the details about the object. For end users
 
 5. use \_\_repr\_\_(str) method to return details of objects for developers
+
+6. Special attributes variable names are surrounded by double underscores, hence do not create your own to avoid conflicts (same for methods) **Dunder**
+

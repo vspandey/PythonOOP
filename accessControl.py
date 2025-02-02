@@ -1,34 +1,19 @@
-## Access Level Control in Python
+class demo:
 
-""" In Python, access level control for methods and variables is managed through naming conventions rather than explicit keywords like in Java. Here are the conventions:
-"""
+    def __init__(self, name, profession, age):
+        self._name = name
+        self.__profession = profession
+        self.age = age
 
-""" **Public**: Methods and variables are public by default. They can be accessed from anywhere.
-    ```python
-    """
-class MyClass:
-        def __init__(self):
-            self.public_var = "I am public"
-        
-        def public_method(self):
-            return "This is a public method"
+demo1 = demo("demo1", "Software Developer", 25)
 
-"""**Protected**: A single leading underscore (`_`) indicates that a method or variable is intended for internal use. It is a convention and does not prevent access from outside the class.
-"""
-class MyClass:
-        def __init__(self):
-            self._protected_var = "I am protected"
-        
-        def _protected_method(self):
-            return "This is a protected method"
+print(demo1.__dict__)
 
+print(demo1._name) #non-public attribute
+print(demo1._demo__profession) #private attribute, demo is the class name.
+print(demo1.age) #public attribute
 
-""" **Private**: A double leading underscore (`__`) triggers name mangling, making it harder to access the method or variable from outside the class. This is used to avoid accidental access and name conflicts in subclasses.
-"""
-class MyClass:
-        def __init__(self):
-            self.__private_var = "I am private"
-        
-        def __private_method(self):
-            return "This is a private method"
+#name mangling, cannot directly call __profession
+print(demo1.__profession) #AttributeError: 'demo' object has no attribute '__profession'
 
+    
